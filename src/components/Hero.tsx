@@ -5,7 +5,7 @@ import Image from "next/image";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center px-6">
+    <section className="pt-20 min-h-[calc(100vh-5rem)] flex items-center px-6">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         {/* Text */}
         <motion.div
@@ -48,7 +48,8 @@ export default function Hero() {
           initial={{ opacity: 0, scale: 0.96 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.6, ease: "easeOut", delay: 0.1 }}
-          className="relative h-[420px] rounded-3xl overflow-hidden"
+          // className="relative h-[420px] rounded-3xl overflow-hidden"
+          className="relative h-105 rounded-3xl overflow-hidden"
         >
           <Image
             src="/hero.jpg"
